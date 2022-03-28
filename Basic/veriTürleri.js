@@ -55,7 +55,7 @@ let firstName='Sefa',
  console yazdırmak için console.log(firstName, country, age, isMarried) şeklinde kullanılır.
  const içinde aynısı geçerli
 
-
+//Const ile sadece o satırda değer verilebilir sonradan verilemez
 const(Veriler hiç değişmeyecekse const kullanılır)
 const gravity=9.81
 const PI=3.14
