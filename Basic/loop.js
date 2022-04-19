@@ -85,6 +85,7 @@ const langs = ["Python", "Javascript", "Java"];
 // console.log(ages)
 
 //for in döngüsü
+// for in döngüsü ile elemanların değerini almak istersek 2 özellik çağırırız ilk özellik index değeri 2.özellik o indexin değeri
 const user = {
     name: "Mehmet",
     age: 25
@@ -92,3 +93,11 @@ const user = {
 for (let key in user) {
     console.log(key, user[key]);
 }
+
+//for of döngüsü
+//for of döngüsü ile  direkt değerleri alırız for indeki gibi index değerini almaya gerek yok
+const array1 = ['a', 'b', 'c'];
+for (const element of array1) {
+  console.log(element);
+}
+
