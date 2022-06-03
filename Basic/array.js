@@ -95,8 +95,7 @@ console.log(bulunacakEleman3);
 //.reduce()
 //Bu metot dizimizi yalnızca bir değere indirger.
 //Parantez içerisine parametre olarak bir fonksiyon ve accumulator'ün (toplayıcının) başlangıç değeri girilir.
-//Bu metot orijinal diziyi değiştirmez. (Mutate etmez.)
-//Tam olarak ne yaptığını anlamak için örnekleri inceleyelim.
+//Bu metot orijinal diziyi değiştirmez.
 const sayilar = [10,20,30];
 // Dizi içindeki sayıları toplayarak indirgeyecek bir fonksiyon yazalım:
 function indirgeyici (akumulator, sayi) {
