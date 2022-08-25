@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color:#B09E99 ;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    background-color: #D8CFCC;
+    width: 60%;
+    height: 60%;
+}
+.button{
+    cursor: pointer;
+    width: 40%;
+    height: 3rem;
+    box-shadow: 0px 0px 0px 6px rgba(108,165,230,1);
+    background-color: #64B6AC;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.quete{
+    width: 90%;
+    margin: 0 auto;
+    color: #6C757D;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.author{
+    color: #64B6AC;
+    font-size: 1.3rem;
+    width: 90%;
+    margin: 0 auto;
+    text-align: end;
+}
