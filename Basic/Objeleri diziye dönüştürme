@@ -1,0 +1,19 @@
+Objeleri arraye dönüştürmek için üç yöntem
+Object.keys() ->> objedeki key değerleri bir dizi olarak döner
+Object.values() ->> objedeki value değerleri bir dizi olarak döner
+Object.entries() ->> hem key hem value değerlerini bir array içinde döner
+
+const person = {
+    name:'sefa',
+    age:24,
+    status: 'student',
+}
+
+Object.keys(person)
+(3) ['name', 'age', 'status']
+
+Object.values(person)
+(3) ['sefa', 24, 'student']
+
+Object.entries(person)
+(3)[['name','sefa'],['age',24],['status','student']]
