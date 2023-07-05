@@ -1,0 +1,23 @@
+:root{
+  --tomato : hsl(234, 29%, 20%);
+}
+body{
+  background-color: var(--tomato);
+  &p{
+    font-size: 16px;
+  }
+}
+.form-div{
+  background-color: white;
+  width: 1440px;
+  margin: 200px auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+.form-div>svg{
+  border: none;
+}
+.form-div>* {
+  margin: 10px;
+}
