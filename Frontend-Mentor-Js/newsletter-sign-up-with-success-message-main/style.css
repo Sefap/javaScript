@@ -1,23 +1,117 @@
 :root{
-  --tomato : hsl(234, 29%, 20%);
+  --tomato : hsl(4, 100%, 67%);
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
 }
 body{
-  background-color: var(--tomato);
-  &p{
-    font-size: 16px;
-  }
+  background-color: var(--Dark-Slate-Grey);
+  font-family: Roboto;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+}
+body p {
+  font-size: 16px;
 }
 .form-div{
   background-color: white;
-  width: 1440px;
-  margin: 200px auto;
+  width: 800px;
+  margin: 100px auto;
   display: flex;
   justify-content: space-between;
   border-radius: 20px;
+  padding: 20px;
+  gap: 30px;
+  
 }
-.form-div>svg{
+.left-form{
+  width: 100%;
+  margin-top: 80px;
+  padding-left: 20px;
+}
+.left-form-list{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.left-form-list img{
+  margin-right: 10px;
+}
+.email-info-error{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.form-email-p{
+  font-size: 12px;
+}
+#emailError{
+  font-size: 12px;
+}
+form{
+  width: 100%;
+
+} 
+#email{
+  padding: 1rem;
+  width:calc(100% - 18px);
+  border: 1px solid rgb(189, 187, 187);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding-right: 0;
+}
+.subscribe-button,.dismiss-btn{
+  width: 100%;
+  padding: 1rem;
   border: none;
+  border-radius: 5px;
+  background-color: var(--Dark-Slate-Grey);
+  color: var(--White);
+  cursor: pointer;
 }
-.form-div>* {
-  margin: 10px;
+#email:focus+.subscribe-button,.subscribe-button:hover,.dismiss-btn:hover{
+  background-color: var(--tomato) ;
+}
+.succes>img{
+  width: 50px;
+}
+.succes{
+  width: 300px;
+  /* height:300px; */
+  margin:10% auto;
+  background-color: white;
+  /* border: 1px solid black; */
+  padding: 30px;
+  border-radius: 30px;
+}
+.dismiss-btn{
+  margin-top: 30px;
+}
+@media only screen and (max-width: 600px) {
+  
+  .form-div{
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    max-width: 600px;
+    border-radius: 0;
+    padding-bottom: 30px;
+  }
+  .left-form{
+    width: calc(100% - 41px);
+  }
+  .right-form>img{
+    background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+    width: 100%;
+    display: block;
+  }
+  .form{
+    margin: 0 auto;
+  }
 }
