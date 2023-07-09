@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [[Add live site URL here]](https://frontendmentornewslettersignup.vercel.app/))
+- Live Site URL: [[Live]](https://frontendmentornewslettersignup.vercel.app/)]
 - 
 ## My process
 
