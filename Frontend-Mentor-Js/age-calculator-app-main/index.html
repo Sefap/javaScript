@@ -8,6 +8,14 @@
   
   <title>Frontend Mentor | Age calculator app</title>
 
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -16,22 +24,47 @@
 </head>
 <body>
 
-  Day
-  DD
+  <main>
+    
+    <div class="container">
+      <div class="inputs">
+        <div class="day">
+          <label for="day">DAY</label>
+          <input id="day" type="number" placeholder="DD" min="1" max="31" maxlength="2">
+          <span style="color:red;" class="error-message-day"></span>
+        </div>
+        <div class="month">
+          <label for="month">MONTH</label>
+          <input id="month" type="number" placeholder="MM" min="1" max="12" maxlength="2">
+          <span style="color:red;" class="error-message-month"></span>
+        </div>
+        <div class="year">
+          <label for="year">YEAR</label>
+          <input id="year" type="number" placeholder="YYYY" min="1900" max="2099" maxlength="4" >
+          <span style="color:red;" class="error-message-year"></span>
+        </div>
+        
+      </div>
+      <section>
+        <button class="calculate-btn" >
+          <img src="assets/images/icon-arrow.svg" alt="">
+        </button>
+      </section>
+      <div class="outputs">
+        <div class="ab"><span class="years-out">--</span> years</div>
+        <div class="ab"><span class="months-out">--</span> months</div>
+        <div class="ab"><span class="days-out">--</span> days</div>
+      </div>
+    </div>
 
-  Month
-  MM
+  </main>
 
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
+ 
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/sefaplbyk">Sefa Palabıyık</a>.
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
