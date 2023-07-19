@@ -1,0 +1,159 @@
+:root{
+   /* Primary */
+   --color-light-red: hsl(0, 100%, 67%);
+   --color-orangey-yellow: hsl(39, 100%, 56%);
+   --color-green-teal: hsl(166, 100%, 37%);
+   --color-cobalt-blue: hsl(234, 85%, 45%);
+   /* Gradients */
+   --color-light-slate-blue: hsl(252, 100%, 67%);
+   --color-light-royal-blue: hsl(241, 81%, 54%);
+   --color-violet-blue: hsla(256, 72%, 46%, 1);
+   --color-persian-blue: hsla(241, 72%, 46%, 0);
+   /* Neutral */
+   --color-white: hsl(0, 0%, 100%);
+   --color-pale-blue: hsl(221, 100%, 96%);
+   --color-light-lavender: hsl(241, 100%, 89%);
+   --color-dark-gray-blue: hsl(224, 30%, 27%);
+}
+ 
+body{
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+p{
+  font-size: 18px;
+}
+
+
+.container{
+  font-family: 'Hanken Grotesk', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1440px;
+  height: 500px;
+  background-color: var(--color-white);
+  
+}
+.result{
+  background : linear-gradient(to bottom , var(--color-light-slate-blue), var(--color-light-royal-blue) );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--color-light-lavender);
+  padding: 30px 100px;
+  border-radius: 30px;
+}
+.rating{
+  background : linear-gradient(to bottom , var(--color-violet-blue), var(--color-persian-blue) );
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rating div:first-child {
+  font-size: 3.75rem;
+  color: white;
+}
+.rating div:last-child {
+  font-size: 0.75rem;
+}
+.rating+div{
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.rating+div>h1 {
+  color: var(--color-white);
+  font-size: 24px;
+}.rating+div>p{
+  width: 50%;
+  text-align: center;
+  color: var(--color-light-lavender)
+
+}
+.summary{
+  padding: 30px ;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 0px 10px 10px 0;
+  border-left: none !important;
+  background-color: #FCFCFC;
+  /* margin-left: -20px; */
+}
+.summary-header{
+margin-bottom: 20px;
+}
+ul{
+  list-style-type: none;
+}
+ul>li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding: 20px;
+  border-radius: 10px;
+}
+ul>li>div{
+  display: flex;
+  align-items: center;
+}
+
+
+.reaction{
+  background-color: rgba(255, 0, 0, 0.1);
+  color: var(--color-light-red);
+  
+}
+.memory{
+  background-color: rgba(255, 255, 0, 0.1);
+  color: var(--color-orangey-yellow);
+}
+.verbal{
+  background-color: rgba(0, 128, 0, 0.1);
+  color: var(--color-green-teal);
+}
+
+.visual{
+  background-color: rgba(0, 0, 255, 0.1);
+  color: var(--color-cobalt-blue);
+}
+
+.score-rate{
+  color: black;
+}
+.score-rate>span{
+  opacity: 0.6;
+}
+.cnt-btn{
+  width: 100%;
+  padding: 20px;
+  border-radius: 35px;
+  color: white;
+  border: none;
+  background-color:var(--color-dark-gray-blue) ;
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px)  {
+  .container {
+    width: 375px;
+    grid-template-columns: 1fr; /* Dikey sıralama için tek sütun */
+    grid-template-rows: auto auto; /* Dikeyde iki satır */
+  }
+}
