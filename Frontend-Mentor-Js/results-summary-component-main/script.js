@@ -17,6 +17,5 @@ fetch('data.json')
       li.innerHTML=html
       ul.appendChild(li);
     });
-    console.log(data);
   })
   .catch(error => console.log(error));
