@@ -30,7 +30,6 @@ p{
   font-size: 18px;
 }
 
-
 .container{
   font-family: 'Hanken Grotesk', sans-serif;
   display: grid;
@@ -150,16 +149,7 @@ ul>li>div{
 }
 
 
-footer {
-  background-color: #FCFCFC;
-  padding: 30px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.08);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: sticky; /* Footer'ı sayfanın en altında sabit bir şekilde tutar */
-  bottom: 0; /* Footer'ı sayfanın en altında tutmak için bottom: 0; kullanılır */
-}
+
 @media only screen and (max-width: 768px)  {
   .container {
     width: 375px;
