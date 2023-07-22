@@ -1,0 +1,151 @@
+:root{
+  --Soft-Orange: hsl(35, 77%, 62%);
+  --Soft-Red : hsl(5, 85%, 63%);
+
+  --Off-White: hsl(36, 100%, 99%);
+  --Grayish-Blue :hsl(233, 8%, 79%);
+  --Dark-Grayish-Blue:hsl(236, 13%, 42%);
+  --Very-Dark-Blue:hsl(240, 100%, 5%);
+}
+body{
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  width: 1440px;
+  margin: 0 auto;
+
+}
+.container{
+  width:80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+.menu>ul{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.menu>ul>li:hover{
+  color: var(--Soft-Red);
+  cursor: pointer;
+}
+main{
+  margin-right: 16px;
+}
+section{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  
+}
+.main-img>img{
+  width: 100% !important;
+}
+
+.information{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+}
+.infofd{
+  width: 300px;
+  font-size: 50px;
+  font-weight: 700;
+}
+.infosd{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  padding-right: 10px;
+  margin-left: 8px;
+}
+.infosd>p{
+  line-height: 1.5;
+  width: 95%;
+}
+.infosd>button:last-child{
+  width: 200px;
+  height: 40px;
+  background-color: var(--Soft-Red);
+  color: white;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border: none;
+}
+aside{
+  background-color: var(--Very-Dark-Blue);
+  padding: 20px;
+  color: var(--Off-White);
+}
+aside > h1 {
+  color: var(--Soft-Orange);
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 36px;
+}
+.main-aside-ul{
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-aside-ul>li{
+  border-bottom: 0.5px solid var(--Off-White);
+  padding-right: 36px;
+}
+.main-aside-ul>li:last-child{
+  border-bottom: none;
+}
+.main-aside-ul>li>h2{
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.main-aside-ul>li>p{
+  margin-bottom: 20px;
+  opacity: .8;
+  line-height: 1.6;
+}
+footer{
+  margin-top: 36px;
+}
+.footer-ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+.footer-ul>li{
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 16px;
+}
+.footer-ul>li>img{
+  width: 90px;
+
+}
+.fld{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.fld>h2{
+  font-size: 25px;
+  font-weight: 700;
+  opacity: .2;
+}
+.fld>h3{
+  font-weight: 700;
+  font-size: 20px;
+}
+.fld>p{
+  opacity: .4;
+  line-height: 1.5;
+  width: 82%;
+}
+.attribution{
+  margin-top: 100px;
+}
