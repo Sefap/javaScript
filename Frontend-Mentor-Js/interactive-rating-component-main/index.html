@@ -6,44 +6,52 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <!-- fontfamily -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution {position: absolute;bottom: 0; font-size: 11px; text-align: center; color: white; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
+  <div class="container">
+    <div class="firstsc" >
+      <div class="star">
+        <img src="images/icon-star.svg" alt="">
+      </div>
+      <section>
+        <h2>How did we do?</h2>
+        <p>Please let us know how we did with your support request.All feedback is appreciated to help us improve our offering!</p>
+      </section>
+      <div class="rating">
+  
+      </div>
+      <button class="submit-btn">SUBMIT</button>
+    </div>
+    <div class="secondsc">
+      <div class="std">
+        <img src="images/illustration-thank-you.svg" alt="">
+        <p class="selectedp"></p>
+      </div>
+      <div class="spd">
+        <h2>Thank You!</h2>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+      </div>
+    </div>
+  </div>
 
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/sefaplbyk" target="_blank">Sefa Palabıyık</a>.
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
