@@ -9,7 +9,6 @@ let rate = [1,2,3,4,5]
 secondsc.style.display = "none";
 firstsc.style.display = "inline";
 
-// selectedRate ? btn.disabled = false:btn.disabled = true
 
 
 rating.innerHTML = rate.map((x)=>(
@@ -31,7 +30,6 @@ const thankYouState = () => {
     firstsc.style.display = "none"
     secondsc.style.display = "inline"
   }
-  console.log("sa");
 }
 
 btn.addEventListener("click",thankYouState)
