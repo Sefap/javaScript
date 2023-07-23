@@ -21,8 +21,8 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/sefaplbyk/javaScript/tree/main/Frontend-Mentor-Js/news-homepage-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution](https://github.com/sefaplbyk/javaScript/tree/main/Frontend-Mentor-Js/news-homepage-main)
+- Live Site URL: [live](https://your-live-site-url.com)
 
 ## My process
 
