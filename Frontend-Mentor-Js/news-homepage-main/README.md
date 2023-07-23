@@ -22,7 +22,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 ### Links
 
 - Solution URL: [solution](https://github.com/sefaplbyk/javaScript/tree/main/Frontend-Mentor-Js/news-homepage-main)
-- Live Site URL: [live](https://your-live-site-url.com)
+- Live Site URL: [live](https://sefaplbyk.github.io/javaScript/Frontend-Mentor-Js/news-homepage-main/)
 
 ## My process
 
