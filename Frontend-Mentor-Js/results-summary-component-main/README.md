@@ -23,7 +23,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 ### Links
 
 - Solution URL: [github](https://github.com/sefaplbyk/javaScript/tree/main/Frontend-Mentor-Js/results-summary-component-main)
-- Live Site URL: [ live](https://frontendmentorresultsummary.vercel.app/)
+- Live Site URL: [ live](https://sefaplbyk.github.io/javaScript/Frontend-Mentor-Js/results-summary-component-main/)
 
 ## My process
 

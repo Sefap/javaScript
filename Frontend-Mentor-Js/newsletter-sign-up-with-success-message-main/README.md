@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [[Live]](https://frontendmentornewslettersignup.vercel.app/)
+- Live Site URL: [[Live]](https://sefaplbyk.github.io/javaScript/Frontend-Mentor-Js/newsletter-sign-up-with-success-message-main/)
 - 
 ## My process
 

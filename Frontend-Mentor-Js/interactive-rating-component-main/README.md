@@ -43,8 +43,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/sefaplbyk/javaScript/tree/main/Frontend-Mentor-Js/interactive-rating-component-main)
+- Live Site URL: [Add live site URL here](https://sefaplbyk.github.io/javaScript/Frontend-Mentor-Js/interactive-rating-component-main/)
 
 ## My process
 

@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/sefaplbyk/javaScript/tree/main/Frontend-Mentor-Js/age-calculator-app-main)
-- Live Site URL: [Live](https://agecalculatorfrontendmentor.vercel.app/)
+- Live Site URL: [Live](https://sefaplbyk.github.io/javaScript/Frontend-Mentor-Js/age-calculator-app-main/)
 
 ## My process
 ### Built with
