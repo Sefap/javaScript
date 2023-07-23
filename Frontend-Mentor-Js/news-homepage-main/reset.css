@@ -15,6 +15,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font: inherit;
   vertical-align: baseline;
 }
+a{
+  text-decoration: none;
+}
 
 /* Yerleşik elementlerin stilini sıfırlamak için bazı ek düzenlemeler */
 body {
