@@ -1,0 +1,119 @@
+:root{
+
+  /* Text */
+  --Very-dark-desaturated-blue:hsl(238, 29%, 16%);
+  --Soft-red:hsl(14, 88%, 65%);
+  --Very-dark-grayish-blue:hsl(237, 12%, 33%);
+  --Dark-grayish-blue:hsl(240, 6%, 50%);
+
+  /* Gradient */
+  --Soft-violet:hsl(273, 75%, 66%);
+  --Soft-blue:hsl(240, 73%, 65%);
+
+  /* Dividers */
+  --Light-grayish-blue:hsl(240, 5%, 91%);
+
+
+}
+
+body{
+  font-family: 'Kumbh Sans', sans-serif;
+  width: 1440px;
+  font-size: 12px;
+  height: 100vh;
+  margin: 0 auto;
+  background: linear-gradient(to bottom,var(--Soft-violet),var(--Soft-blue));
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  width: 60%;
+}
+.leftSide{
+  background: url("images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: -560px -300px;
+  height: 100%;
+  
+}
+.ill-wod{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.woman{
+  
+  width: 100%;
+  height: 100%;
+  background: url("images/illustration-woman-online-desktop.svg");
+  background-repeat: no-repeat;
+
+  background-position-x: -60px;
+  background-position-y: 60px;
+}
+.box{
+    position: absolute;
+    height: 120px;
+    left: -22.2%;
+    top: 42%;
+}
+
+.rightSide{
+  padding: 4rem;
+  padding-right: 5rem;
+}
+.rightSide>h1{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.faq-list>li{
+  border-bottom: 1px solid var(--Dark-grayish-blue);
+  padding: 1rem 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+.active .icon {
+  transform: rotate(180deg);
+}
+.question{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--Dark-grayish-blue);
+  width: 100%;
+  height: 100%;
+}
+.question:hover{
+  color: var(--Soft-red);
+}
+.answer{
+  display: none;
+  /* margin: 1rem 0; */
+  margin-top: 1rem;
+  font-size: 14px;
+  color: var(--Dark-grayish-blue);
+  /* font-weight: 800; */
+  line-height: 1.2;
+  cursor: auto;
+}
+.active{
+  color: black;
+  font-weight: 800;
+}
+@media only screen  and (max-width:768px){
+  body{
+    width: 375px;
+  }
+  .container{
+    grid-template-columns: 1fr;
+  }
+}
