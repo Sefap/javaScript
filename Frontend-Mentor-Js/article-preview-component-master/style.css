@@ -94,8 +94,15 @@ body{
   border-radius: 50%;
   background-color: var(--Light-Grayish-Blue);
 }
+.share-icon:hover{
+  background-color: var(--Grayish-Blue);
+}
+.share-icon:hover svg path{
+  fill: white;
+}
+
 .icons{
-  display: flex;
+  display: none;
   align-items: center;
   padding: 15px 30px;
   gap: 20px;
@@ -109,7 +116,78 @@ body{
   letter-spacing: 5px;
   text-transform: uppercase;
 }
+.corner{
+  position: absolute;
+  left: 50%;
+  bottom: -15%;
+  width: 15px;
+  height: 15px;
+  background-color: var(--Very-Dark-Grayish-Blue);
+  transform: rotate(45deg);
+}
 .attribution{
   position: absolute;
-  bottom: 200px;
+  bottom: 10px;
+}
+
+@media only screen  and (max-width:968px) {
+  .cart-container{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .container{
+    width: 375px;
+  }
+  .cart-container{
+    width: 90%;
+  }
+  .left>img{
+    width: 100%;
+  }
+
+
+  .up>img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  .down{
+    padding: 0px;
+  }
+  .down>h2,.down>p{
+    margin: 15px 30px;
+  }
+  .person{
+    display: none;
+  }
+  .share-icon{
+    position: absolute;
+    background-color: var(--Grayish-Blue);
+    fill: white;
+    width: 30px;
+    height: 30px;
+    right: 5%;
+    
+  }
+  .share-icon svg path{
+    fill: white;
+  }
+  .corner{
+    display: none;
+  }
+  .icons{
+    display: flex;
+    position: static;
+    gap: 16px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%;
+
+  }
+  .icon{
+    width: 100%;
+  }
 }
