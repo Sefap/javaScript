@@ -10,8 +10,9 @@ function clickHandle() {
 }
 
 const addOrRemoveClickHandler = () => {
-  if (window.innerWidth < 600) {
+  if (window.innerWidth < 968) {
     share_icon.removeEventListener('click', clickHandle);
+    icons_g.style.display = "flex"
 
   } else {
     share_icon.addEventListener('click', clickHandle);
