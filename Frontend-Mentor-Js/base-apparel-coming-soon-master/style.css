@@ -45,7 +45,12 @@ body{
 .left * {
   width: 70%;
 }
-
+.logo{
+  margin-bottom:7rem;
+}
+.h2{
+  margin-bottom: 1rem;
+}
 .h2 h2:first-child {
   color: var(--Desaturated-Red);
   letter-spacing: 10px;
@@ -82,10 +87,10 @@ body{
 .error{
   position: absolute;
   width: 50px;
-  right: 40px;
+  right: 20px;
   bottom: 5px;
 
-  /* display: none; */
+  display: none;
 }
 .arrow>svg{
   width: 10px;
@@ -117,6 +122,7 @@ body{
 .left { order: 1; }
 .right { order: 2; }
 .errorOut{
+  display: none;
   margin-top: 10px;
   margin-left: 30px;
   font-size: 14px;
@@ -134,14 +140,15 @@ input[type=email]:focus {
     height: 1000px;
   }
   .cart-container{
-    width: 100%;
+    width: 375px;
     height: 100%;
     grid-template-columns: 1fr;
+    margin: 0 auto;
   }
   .logo{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 20%;
     height: 50px;
     margin-left: 30px;
     margin-top: 20px;
@@ -149,6 +156,7 @@ input[type=email]:focus {
     align-content: center;
     align-items: center;
   }
+  
   .right{
     margin-top: 250px;
   }
@@ -172,8 +180,17 @@ input[type=email]:focus {
   /* width: auto; */
   width: 90%;
  }
+ .h2>h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.h2>h2:last-child{
+  margin-bottom: 0px;
+}
  .left>p{
-  margin-top: 20px;
+  margin-top: 0px;
   font-weight: 400;
  }
 .arrow{
@@ -185,5 +202,35 @@ input[type=email]:focus {
   
 }
 .right { order: 1; }
-
+.error{
+  width: 50px;
+  right: 40px;
+  bottom: 5px;
+}
+}
+@media only screen and (max-width:350px) {
+  .container{
+    width: 100%;
+    height: 1000px;
+  }
+  .cart-container{
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-height:800px) {
+  @media only screen and (min-width:600px) {
+    .right{
+      margin-top: 20%;
+    }
+  }
+}
+@media only screen and (min-height:900px) {
+  @media only screen and (min-width:900px) {
+    .right{
+      margin-top: 0;
+    }
+  }
 }

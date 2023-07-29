@@ -3,11 +3,10 @@ let errorIcon = document.querySelector(".error");
 let submitArrow = document.querySelector(".arrow")
 let hero = document.querySelector('.hero')
 let errorMsg = document.querySelector('.errorOut')
+let email = document.getElementById('email');
 
 
 
-errorIcon.style.display = "none"
-errorMsg.style.display = "none"
 window.addEventListener("load", () => {
   function updateImageSrc() {
     if (window.innerWidth < 968) {
@@ -22,7 +21,6 @@ window.addEventListener("load", () => {
 });
 
 submitArrow.addEventListener('click',function(event){
-let email = document.getElementById('email');
   event.preventDefault();
   if(emailRegex.test(email.value)){
     errorIcon.style.display = "none"
@@ -38,3 +36,17 @@ let email = document.getElementById('email');
     errorMsg.style.display = "block"
   }
 })
+email.addEventListener('input',function(event){
+    event.preventDefault();
+    if(emailRegex.test(email.value)){
+      errorIcon.style.display = "none"
+      errorMsg.style.display = "none"
+      console.log("gönderildi");
+      
+    }else{
+      console.log("gönderilemedi");
+      errorIcon.style.display = "inline"
+      errorMsg.style.display = "block"
+    }
+  })
+  
