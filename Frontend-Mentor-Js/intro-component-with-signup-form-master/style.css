@@ -25,8 +25,6 @@ footer{
 }
 .container{
   width: 1440px;
-  height: 80vh;
-  border: 1px solid black;
   background: url(images/bg-intro-desktop.png);
   background-color: var(--red);
 }
@@ -65,27 +63,46 @@ main{
   border-radius: 10px;
   color: white;
   font-size: 14px;
-  box-shadow: rgb(255, 255, 255) 0px 25px 20px -25px;
+  /* box-shadow: rgb(255, 255, 255) 0px 25px 20px -25px; */
   box-shadow: 0px 7px rgba(0, 0, 0, 0.1) ;
   margin-bottom: 20px;
 }
 .form{
-  padding: 20px;
+  padding: 30px;
   background-color: white;
   display: flex;
   flex-direction: column;
   gap: 16px;
   border-radius: 10px;
+  box-shadow: 0px 7px rgba(0, 0, 0, 0.1) ;
+  position: relative;
 }
-.form>input{
-  padding: 15px;
+.form>div>input{
+  padding: 15px 25px;
   border-radius: 10px;
   border: 1px solid var(--grayish-blue);
+}
+.form>div{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form>div>input:focus{
+  outline: none;
+  border-width: 2px !important;
+  border-color: var(--dark-blue) !important;
 }
 .form>input[type="submit"]{
   background-color: var(--green);
   border: none;
   color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 15px 25px;
+  box-shadow: 0px 3px rgba(0, 0, 0, .4) ;
+  border-radius: 10px;
+
+  
 }
 .form>p{
   text-align: center;
@@ -95,4 +112,16 @@ main{
 .form>p>span{
   font-weight: 700;
   color: var(--red);
+}
+.error{
+  color: red;
+  font-size: 12px;
+  text-align: right;
+  font-style: italic;
+  display: none;
+}
+.error>svg{
+  position: absolute;
+  bottom: 45%;
+  right: 5%;
 }

@@ -50,15 +50,41 @@
         <b>Try it free 7 days</b> then $20/mo. thereafter
           </div>
           <form class="form">
-            <input type="text" value="First Name">
-            <input type="text" value="Last Name">
-            <input type="email" value="Email Address">
-            <input type="text" value="Password">
-            <input type="submit" value="CLAIM YOUR FREE TRIAL">
+            <div class="fn">
+              <input type="text" placeholder="First Name" maxlength=10>
+              <div class="error">
+                <span>First Name cannot be empty</span>
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+              </div>
+            </div>
+            <div class="fl">
+              <input type="text" placeholder="Last Name" maxlength=10>
+            <div class="error">
+              <span>First Last cannot be empty</span>
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+            </div>
+            </div>
+            <div class="ei">
+              <input type="email" placeholder="Email Address">
+            <div class="error">
+              <span>Looks like this is not an email</span>
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+            </div>
+            </div>
+            <div class="pi">
+              <input type="text" placeholder="Password">
+            <div class="error">
+              <span>Password cannot be empty</span>
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+            </div>
+            </div>
+            <input class="sb-btn" type="submit" value="CLAIM YOUR FREE TRIAL">
             <p>
               By clicking the button, you are agreeing to our <span>Terms and Services</span>
             </p>
           </form>
+
+          
         </div>
       </main>
     </div>
@@ -89,5 +115,6 @@
         >.
       </p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
