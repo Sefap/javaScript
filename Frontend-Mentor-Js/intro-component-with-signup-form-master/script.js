@@ -3,7 +3,6 @@ let firstNInput = document.querySelector('.fn>input');
 let lastNInput = document.querySelector('.fl>input');
 let emailInput = document.querySelector('.ei>input');
 let passwordInput = document.querySelector('.pi>input');
-
 let elements = document.querySelectorAll('.form>div>input')
 
 let btn = document.querySelector('.sb-btn');
@@ -24,7 +23,8 @@ form.addEventListener('submit', (event) => {
   });
 
   // Email doğrulaması
-  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
   const isValidEmail = emailRegex.test(emailInput.value);
 
   if (hasEmptyInput) {
