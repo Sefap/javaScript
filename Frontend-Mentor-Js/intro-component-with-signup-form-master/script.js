@@ -7,28 +7,37 @@ let passwordInput = document.querySelector('.pi>input');
 let elements = document.querySelectorAll('.form>div>input')
 
 let btn = document.querySelector('.sb-btn');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
 
-btn.onclick=(e)=>{
-  e.preventDefault();
-  elements.forEach((input)=>{
-    if (input.value.trim() === ""){
-      input.nextElementSibling.style.display = "inline"
-    }else {
-      input.nextElementSibling.style.display = "none"
-      return;
+  // Diğer inputların kontrolü
+  let hasEmptyInput = false;
+  elements.forEach((input) => {
+    if (input.value.trim() === "") {
+      input.nextElementSibling.style.display = "inline";
+      input.style.borderColor = "red";
+      hasEmptyInput = true;
+    } else {
+      input.nextElementSibling.style.display = "none";
+      input.style.borderColor = "var(--grayish-blue)";
     }
-  })
+  });
+
+  // Email doğrulaması
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const isValidEmail = emailRegex.test(emailInput.value);
 
-  if (isValidEmail) {
-    emailInput.nextElementSibling.style.display = "none"
-
-    console.log('Valid email address');
-  } else {
-    emailInput.nextElementSibling.style.display = "inline"
-
-    console.log('Invalid email address');
+  if (hasEmptyInput) {
+    return; // Form gönderimini engeller, çünkü boş input var
   }
-console.log("object");
-}
+
+  if (!isValidEmail) {
+    emailInput.nextElementSibling.style.display = "inline";
+    emailInput.placeholder = "email@example.com";
+    emailInput.style.borderColor = "red";
+    emailInput.classList.add("empl");
+    return; // Form gönderimini engeller, çünkü email doğrulanmadı
+  }
+
+  form.submit(); // Formu gönder
+});

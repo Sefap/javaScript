@@ -16,12 +16,9 @@ body{
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-footer{
-  position: absolute;
-  bottom: 0;
 }
 .container{
   width: 1440px;
@@ -124,4 +121,32 @@ main{
   position: absolute;
   bottom: 45%;
   right: 5%;
+}
+.empl::placeholder{
+color: var(--red);
+}
+
+@media only screen and (max-width:968px) {
+  body{
+    height: 100%;
+  }
+  .container{
+    width: 375px;
+    background: url(images/bg-intro-mobile.png);
+    background-color: var(--red);
+  }
+  main{
+    width: 100%;
+    height: 100%;
+    padding: 4px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .left-side{
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: 1fr;
+    text-align: center;
+  }
+ 
 }
