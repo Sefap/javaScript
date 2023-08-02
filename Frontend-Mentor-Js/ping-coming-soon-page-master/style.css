@@ -22,14 +22,13 @@ body{
 }
 main{
   width: 1440px;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .container{
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -49,6 +48,7 @@ main{
   font-weight: 300;
   text-align: center;
   margin-bottom: 10px;
+  font-size: 45px;
 }
 .button h2 span {
   font-weight: 700;
@@ -56,9 +56,8 @@ main{
 }
 .button p{
   text-align: center;
-  color: var(--Gray);
   margin-bottom: 16px;
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 .input{
   width: 100%;
@@ -66,18 +65,47 @@ main{
   justify-content: center;
   gap: 10px;
 }
-.input input{
+.emi{
   padding: 16px;
-  width: 60%;
+  width: 70%;
   border-radius: 35px;
   border: 1px solid var(--Gray);
 }
-.input button{
-  width: 40%;
+.emi:focus{
+  outline: none;
+}
+.emi::placeholder{
+  color: var(--Gray);
+  opacity: .5;
+}
+.notify-btn{
+  width: 30%;
   color: white;
   background-color: var(--Blue);
   border-radius: 35px;
   border: none;
+  cursor: pointer;
+  box-shadow: 0px 5px var(--Pale-Blue);
+}
+.notify-btn:hover{
+  background-color: var(--Pale-Blue);
+  color: blue;
+}
+.emailerror{
+  border-color: var(--Light-Red);
+}
+.emailerror::placeholder{
+  color: black;
+  opacity: 1;
+}
+.error{
+  color: var(--Light-Red) ;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 16px;
+  font-style: italic;
+  display: none;
+  position: absolute;
 }
 .botside{
   margin-top: 5rem;
@@ -86,18 +114,71 @@ main{
 .botside img{
   width: 100%;
 }
-.footer{
+.container-footer{
   width: 100%;
   text-align: center;  
 }
-.icons i{
-  padding: 16px;
-  margin-left: 16px;
-  border-radius: 500px;
-  color: var(--Blue);
-  border: 1px solid var(--Gray);
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
 }
-.footer p {
+.icons i{
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  color: var(--Blue);
+  border: 1px solid var(--Pale-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.icons i:hover{
+  color: white;
+  background-color: var(--Blue);
+}
+.container-footer p {
   font-size: 14px;
   color: var(--Gray);
+  margin-bottom: 20px;
+}
+@media only screen and (max-width:968px) {
+  main{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container{
+    width: 85%;
+  }
+  .input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .emi{
+    width: 100%;
+  } 
+  .notify-btn{
+    width: 100%;
+    padding: 16px;
+  }
+  .button h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+.button p {
+  margin-bottom: 26px;
+  font-size: 16px;
+}
+.container-footer{
+  margin-top: 80px;
+}
 }
