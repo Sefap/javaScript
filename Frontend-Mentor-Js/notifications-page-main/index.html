@@ -8,6 +8,12 @@
   
   <title>Frontend Mentor | Notifications page</title>
 
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,8 +21,79 @@
   </style>
 </head>
 <body>
+  <main>
+    <div class="container">
+      <div class="header">
+        <div class="notifications">Notificactions <span>3</span></div>
+        <div class="markall">Mark all as read</div>
+      </div>
+      <ul>
+        <li>
+          <img src="assets/images/avatar-mark-webber.webp" alt="">
+          <div class="notificationsInfo">
+            <div> Mark Webber reacted to your recent post My first tournament today!</div>
+            <p>1m ago</p>
+          </div>
+        </li>
+        <li>
+          <img src="assets/images/avatar-angela-gray.webp" alt="">
+          <div class="notificationsInfo">
+            <div>Angela Gray followed you</div>
+            <p>5m ago</p>
+          </div>
+        </li>
+        <li>
+          <img src="assets/images/avatar-jacob-thompson.webp" alt="">
+          <div class="notificationsInfo">
+            <div>Jacob Thompson has joined your group Chess Club</div>
+            <p>1 day ago</p>
+          </div>
+        </li>
+        <li>
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="">
+          <div class="notificationsInfo">
+            <div>Rizky Hasanuddin sent you a private message</div>
+            <p>5 days ago</p>
+            <div class="privateMsg">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.</div>
+          </div>
+        </li>
+        <li>
+          <img src="assets/images/avatar-kimberly-smith.webp" alt="">
+          <div class="notificationsInfo">
+            <div>
+              Kimberly Smith commented on your picture
+              <p>1 week ago</p>
+            </div>
+            <div><img src="assets/images/image-chess.webp" alt=""></div>
+          </div>
+        </li>
+        <li>
+          <img src="assets/images/avatar-nathan-peterson.webp" alt="">
+          <div class="notificationsInfo">
+            <div>
+            Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
+            </div>
+            <p>
+            2 weeks ago
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="assets/images/avatar-anna-kim.webp" alt="">
+          <div class="notificationsInfo">
+            <div>
+              Anna Kim left the group Chess Club
+            </div>
+            <p>2 weeks ago</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
 
-  Notifications 3
+
+  <!-- Notifications 3
 
   Mark all as read
 
@@ -41,7 +118,7 @@
   2 weeks ago
 
   Anna Kim left the group Chess Club
-  2 weeks ago
+  2 weeks ago -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
