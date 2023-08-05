@@ -10,10 +10,26 @@ let cardNameOut = document.querySelector('.cardNameOut')
 let mmOut = document.querySelector('.mmOut')
 let yyOut = document.querySelector('.yyOut')
 let cvcOut = document.querySelector('.cvcOut')
+// BUTTONS
+let submitBtn = document.querySelector('.submitBtn')
 
 let isRemovingSpace = false;
+
 cardNumber.addEventListener('input', () => {
   let value = cardNumber.value;
+
+  let cardNumberError = document.querySelector('.cartNumberError');
+  if (value.length < 19) {
+    cardNumberError.innerHTML = "Card information must be 16 digits";
+    cardNumber.style.borderColor = "red";
+  } else if (!/^[0-9 ]*$/.test(value)) {
+    cardNumberError.innerHTML = "Wrong format, numbers only";
+    cardNumber.style.borderColor = "red";
+  } else {
+    cardNumberError.innerHTML = "";
+    cardNumber.style.borderColor = "initial";
+  }
+
   //value = value.replace(/\s/g, ''); ifadesi ile dize içindeki tüm boşlukları kaldırırız. Kredi kartı numarasının içindeki boşlukları temizlemek istediğimiz için bunu yapıyoruz.
   value = value.replace(/\s/g, '');
   // value = value.replace(/(.{4})/g, '$1 '); ifadesi ile her 4 karakterde bir boşluk ekliyoruz. Yani, "1234567890123456" gibi bir dizeyi "1234 5678 9012 3456" şeklinde düzenliyoruz.
@@ -46,4 +62,6 @@ yyInput.addEventListener("input",()=>{
 })
 cvcInput.addEventListener('input',()=>{
   cvcOut.innerHTML = cvcInput.value
+})
+submitBtn.addEventListener('click',()=>{
 })
