@@ -48,5 +48,5 @@ Users should be able to:
 ## Author
 
 - Website - [Sefa Palabıyık](websiteismi)
-- Frontend Mentor - [@sefaplbyk](https://www.https://www.frontendmentor.io/profile/sefaplbyk)
+- Frontend Mentor - [@sefaplbyk](https://www.frontendmentor.io/profile/sefaplbyk)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
