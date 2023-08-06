@@ -176,6 +176,7 @@ input[type="text"],input[type="number"]{
   color: var(--white);
   background-color: var(--very-dark-violet);
   outline: none;
+  cursor: pointer;
 }
 input:focus {
   outline: none !important;
@@ -183,6 +184,31 @@ input:focus {
 }
 .complateState{
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.complateState>.complateThank{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.complateState>.complateThank>h1{
+  font-weight: 500;
+}
+.complateState>.complateThank>h2{
+  color: var(--dark-grayish-violet);
+  font-size: 16px;
+}
+
+.complateState>.continueBtn{
+  width: 90%;
+  padding: 10px;
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--very-dark-violet);
+  outline: none;
+  cursor: pointer;
 }
 @media only screen and (max-width:968px) {
  
@@ -258,5 +284,9 @@ input:focus {
   }
   .attribution{
     margin-top: 50px;
+  }
+  .complateState{
+    margin-top: 7rem;
+    width: 100%;
   }
 }
