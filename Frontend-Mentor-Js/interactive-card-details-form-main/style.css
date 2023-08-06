@@ -84,7 +84,7 @@ main{
   position: absolute;
   right: 50px;
 }
-.cartNumberError,.cartNameError,.cartMmError,.cartYyError,.cartCvcError{
+.cartNumberError,.cartNameError,.cartMmError,.cartYyError,.cartCvcError,.errorForm{
   color: var(--error-red);
   font-size: 14px;
 }
@@ -96,7 +96,9 @@ main{
   position: absolute;
   bottom: 0;
 }
-
+.rightside>form>.errorForm{
+  display: none;
+}
 
 /* Bu stil, .cardFront adlı divin genişliğini sayfanın genişliği kadar ve yüksekliğini sayfanın yüksekliği kadar yapacaktır. background-size: contain; ile arka plan resmi divin içine sığacak şekilde ölçeklendirilecektir. Eğer resmin boyutları divin boyutlarından büyükse, resim otomatik olarak küçültülerek sığdırılacaktır. */
 .cardFront{

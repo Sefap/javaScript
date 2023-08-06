@@ -153,21 +153,33 @@ cvcInput.addEventListener('input',()=>{
 submitBtn.addEventListener('click',(event)=>{
   if(name.value.trim() === ""|| cardNumber.value.trim() ==="" ||mmInput.value.trim() === "" || yyInput.value.trim() === "" || cvcInput.value.trim() === ""){
     formReq=false
+    document.querySelector('.errorForm').style.display = "inline";
     return
   }
-
   if (formReq) {
     event.preventDefault();
     document.querySelector('.complateState').style.display = "flex"
     document.querySelector('form').style.display = "none"
+    document.querySelector('.errorForm').style.display = "none";
   } else {
     // Koşul sağlanmazsa submit işlemini engelle
     event.preventDefault();
     console.log('Koşul sağlanmadı, submit işlemi engellendi');
+    document.querySelector('.errorForm').style.display = "inline";
   }
   
 })
 continueBtn.addEventListener('click',()=>{
   document.querySelector('.complateState').style.display = "none"
   document.querySelector('form').style.display = "flex"
+  name.value = "";
+  cardNumber.value = "";
+  mmInput.value = "";
+  yyInput.value = "";
+  cvcInput.value = "";
+  cardNameOut.innerHTML = "SEFA PALABIYIK";
+  cardNumberOut.innerHTML = "0000 0000 0000 0000";
+  mmOut.innerHTML= "00";
+  yyOut.innerHTML = "00";
+  cvcOut.innerHTML = "000";
 })
