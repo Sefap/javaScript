@@ -1,22 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- fontfamily -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwindcdn   -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Expenses chart component</title>
 
-  My balance
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="w-full h-screen flex flex-col justify-center items-center">
+    <main class="w-[1440px] h-5/6 main-c flex justify-center items-center">
+      <div class="card w-2/5">
+        <div class="top flex justify-between p-7 rounded-lg">
+          <div class="left text-white">
+            <p class="text-sm">My balance</p>
+            <p class="text-lg bold font-bold">$ 921.48</p>
+          </div>
+          <div class="logo">
+            <svg
+              width="72"
+              height="48"
+              viewBox="0 0 72 48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#382314" cx="48" cy="24" r="24" />
+                <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="bottom bg-white my-3 rounded-lg p-5">
+          <p>Spending - Last 7 days</p>
+          <div class="chart flex justify-between">
+            
+          <button><div class="w-8 h-48 bg-red-500"></div><p>days</p></button>
+          <button><div class="w-8 h-48 bg-red-500"></div><p>days</p></button>
+          <button><div class="w-8 h-48 bg-red-500"></div><p>days</p></button>
+          <button><div class="w-8 h-48 bg-red-500"></div><p>days</p></button
+          ><button><div class="w-8 h-48 bg-red-500"></div><p>days</p></button>
+          <button><div class="w-8 h-48 bg-red-500"></div><p>days</p></button>
+          <button><div class="w-8 h-48 bg-red-500"></div><p>days</p></button>
+          </div>
+          <hr class="my-8">
+          <div class="bottom-f flex justify-between">
+            <div class="left">
+              <p>Total this month</p>
+              <p class="font-bold ">$478.33</p>
+            </div>
+            <div class="right">
+              <p class="font-bold text-end">+2.4%</p>
+              <p>from last month</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- My balance
   $921.48
 
   Spending - Last 7 days
@@ -33,11 +103,13 @@
   $478.33
 
   +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  from last month -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
