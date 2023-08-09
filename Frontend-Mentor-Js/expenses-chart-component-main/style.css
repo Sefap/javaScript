@@ -16,3 +16,6 @@ body{
 .top{
   background-color: var(--soft-red);
 }
+.current{
+  background-color: var(--cyan);
+}
