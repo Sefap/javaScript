@@ -13,9 +13,24 @@ body{
 .main-c{
   background-color: var(--cream);
 }
-.top{
+.bg-softred{
   background-color: var(--soft-red);
 }
 .current{
-  background-color: var(--cyan);
+  background-color: var(--cyan) !important;
+}
+.medium-brown{
+  color: var(--medium-brown);
+}
+hr{
+  background-color: var(--medium-brown);
+}
+.amountSpan{
+  background-color: var(--dark-brown);
+  color: white;
+  display: none;
+  position: absolute;
+}
+ul>li:hover .amountSpan {
+  display: inline;
 }
