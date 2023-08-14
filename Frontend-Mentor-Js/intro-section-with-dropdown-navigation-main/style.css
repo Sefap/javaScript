@@ -1,16 +1,23 @@
-:root {
-  --almost-white: hsl(0, 0%, 98%);
-  --medium-gray: hsl(0, 0%, 41%);
-  --almost-black: hsl(0, 0%, 8%);
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1; /
 }
-
-.bg-aw{
-  background-color: var(--almost-white);
+.white-side{
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-color: white; 
+  z-index: 1;
 }
-/* .block {
-  display: block;
-} */
-ul
-li{
-  cursor: pointer;
+.pcl{
+  color:hsl(0, 0%, 41%);
 }
