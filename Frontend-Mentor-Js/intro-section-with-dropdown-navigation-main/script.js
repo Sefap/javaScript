@@ -27,7 +27,6 @@ const whiteSide = document.querySelector('.white-side')
 menuBtn.addEventListener('click',()=>{
   menu.classList.toggle('active')
   menu.classList.add('block')
-  // menu.style.display = "inline"
   overlay.style.display = menu.classList.contains('active') ? 'block' : 'none'; // Menü açıldığında overlay'ı görünür yaparız
   whiteSide.style.display = menu.classList.contains('active') ? 'block' : 'none';
   if(menu.classList.contains('active')){
@@ -35,12 +34,10 @@ menuBtn.addEventListener('click',()=>{
     document.body.style.overflow = 'hidden'
     menu.classList.remove('hidden')
     menu.classList.add('block')
-    // menu.style.display = "inline"
 
   }else{
   menuImg.attributes.src.value = 'images/icon-menu.svg'
   document.body.style.overflow = 'auto'
-  // menu.style.display = "none"
   menu.classList.remove('block')
   menu.classList.add('hidden')
   }
@@ -60,12 +57,12 @@ const imageElement = document.querySelector('.right img');
   
   function updateImage() {
     if (window.innerWidth < 768) {
-      imageElement.src = "images/image-hero-mobile.png"; // Yeni resim yolunu belirtin
+      imageElement.src = "images/image-hero-mobile.png"; 
     } else {
-      imageElement.src = "images/image-hero-desktop.png"; // Orijinal resim yolunu belirtin
+      imageElement.src = "images/image-hero-desktop.png"; 
     }
   }
   
-  // Sayfa yüklendiğinde ve pencere boyutu değiştiğinde fonksiyonu çağırın
+  
   window.addEventListener('load', updateImage);
   window.addEventListener('resize', updateImage);
